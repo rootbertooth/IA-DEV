@@ -13,14 +13,6 @@ Colección de bots de mensajería con inteligencia artificial para automatizar t
 | **signalsbot** | Bot de trading crypto con análisis técnico y señales | Python + Telegram + Anthropic Claude | ✅ Activo |
 | **tenant-bot** | Bot de trading con panel multi-tenant (SaaS) | Flask + React + MySQL | ✅ Activo |
 
-### Versiones Migradas (VPS3 - /opt/BOTS/)
-| Bot | Propósito | Tecnología | Estado |
-|-----|-----------|------------|--------|
-| **responsebot** | Bot de Telegram migrado (versión consolidada) | Telethon + OpenAI + Sentence Transformers | ⏸️ Inactivo |
-| **respuestasinteligentes** | Bot de WhatsApp migrado (versión consolidada) | Flask + OpenAI + Meta/Twilio API | ⏸️ Inactivo |
-| **signalsbot** | Bot de trading migrado (versión consolidada) | Python + Telegram + Anthropic Claude | ⏸️ Inactivo |
-| **tenant-bot** | Bot de trading multi-tenant migrado (versión consolidada) | Flask + React + MySQL | ⏸️ Inactivo |
-
 ## Relaciones con Otros Proyectos
 - **abywonder (VPS3):** Independiente. No comparten infraestructura ni dependencias.
 - **
