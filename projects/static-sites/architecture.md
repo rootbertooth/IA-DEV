@@ -8,7 +8,8 @@
 
 ## Estructura de Directorios
 
-```text
+```
+text
 /var/www/html/{dominio}/
 ├── index.html
 ├── assets/
@@ -16,7 +17,7 @@
 │   ├── js/
 │   └── images/
 └── ...
-
+```
 ## Seguridad
 - Sin autenticación (páginas públicas).
 - Archivos estáticos servidos directamente por Nginx.
