@@ -21,10 +21,10 @@ Nexus es una plataforma multi-tenant contenerizada que aloja aplicaciones (tenan
 - **Caché/Colas:** Redis.
 
 ## Relaciones con Otros Proyectos
-- **abywonder (VPS3):** Independiente. Nexus no tiene relación con BabyWonder.
-- **ots (VPS3):** Independiente.
+- **Babywonder (VPS3):** Independiente. Nexus no tiene relación con BabyWonder.
+- **Bots (VPS3):** Independiente.
 
 ## Estado Actual
 - **Desarrollo:** Estructura multi-tenant definida, pero inactiva.
 - **Backups:** Automáticos diarios en /opt/nexus/backups/ con timestamp.
-- **Próximos pasos:** Activar contenedores, añadir más tenants, implementar CI/CD.
+- **Próximos pasos:** Activar contenedores, añadir más tenants, implementar CI/CD, conectar lector de tags NFC
