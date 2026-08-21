@@ -53,9 +53,9 @@ Es la **memoria persistente** del ecosistema.
 
 👨🏻 Para humanos
 
-*Úsalo como documentación viva para onboarding de nuevos miembros.
-*Mantén los archivos actualizados a medida que evolucionan los proyectos.
-*Es el punto de partida para cualquier reunión técnica o planificación.
+* Úsalo como documentación viva para onboarding de nuevos miembros.
+* Mantén los archivos actualizados a medida que evolucionan los proyectos.
+* Es el punto de partida para cualquier reunión técnica o planificación.
 
 ## 📊 Proyectos incluidos (31 en total)
 
