@@ -18,7 +18,7 @@ Es la **memoria persistente** del ecosistema.
 
 ## 📂 Estructura del repositorio
 
-```bash
+```
 .
 ├── .gitignore
 ├── README.md
@@ -40,47 +40,49 @@ Es la **memoria persistente** del ecosistema.
     ├── node-apps/              # Node.js + React + Supabase (6 proyectos)
     ├── wordpress-blogs/        # Blogs corporativos (2 proyectos)
     └── static-sites/           # Sitios HTML/CSS/JS estáticos (7 proyectos)
-🚀 ¿Cómo se usa?
-Para agentes de IA
-Clona el repositorio o accede a los archivos.
+```
 
-Lee profile/ para entender el stack, convenciones y flujo de trabajo.
+## 🚀 ¿Cómo se usa?
 
-Consulta project/index.md para localizar un proyecto específico.
+🤖 Para agentes de IA
 
-Entra en projects/[grupo]/ para ver contexto, arquitectura, estado y decisiones.
+* Clona el repositorio o accede a los archivos.
+* Lee profile/ para entender el stack, convenciones y flujo de trabajo.
+* Consulta project/index.md para localizar un proyecto específico.
+* Entra en projects/[grupo]/ para ver contexto, arquitectura, estado y decisiones.
 
-Para humanos
-Úsalo como documentación viva para onboarding de nuevos miembros.
+👨🏻 Para humanos
 
-Mantén los archivos actualizados a medida que evolucionan los proyectos.
+*Úsalo como documentación viva para onboarding de nuevos miembros.
+*Mantén los archivos actualizados a medida que evolucionan los proyectos.
+*Es el punto de partida para cualquier reunión técnica o planificación.
 
-Es el punto de partida para cualquier reunión técnica o planificación.
+## 📊 Proyectos incluidos (31 en total)
 
-📊 Proyectos incluidos (31 en total)
 VPS	Activos	Inactivos	Total	Propósito
 VPS1 (89.167.100.214)	11	6	17	Laboratorio / Entorno Legacy
 VPS2 (204.168.228.41)	8	0	8	Productos de Negocio
 VPS3 (37.27.201.215)	8	0	8	Producción / Industrialización
-📌 Todos los detalles en project/index.md
 
-🛠️ Tecnologías principales
+##📌 Todos los detalles en project/index.md
+
+##🛠️ Tecnologías principales
+
 Área	Tecnologías
 Backend	Python (Flask, FastAPI), Node.js, PHP (WordPress)
 Frontend	React, Vite, TypeScript, Tailwind
 IA/ML	OpenAI, Anthropic Claude, Google Gemini, Ollama, MediaPipe, Replicate
 Bases de datos	PostgreSQL, MySQL, Redis, Supabase
 Infraestructura	Docker, Docker Compose, Traefik, Nginx, Gunicorn, Uvicorn, PM2, systemd
-📬 Cómo contribuir
+
+## 📬 Cómo contribuir
+
 Actualiza los archivos cuando cambie un proyecto (estado, arquitectura, decisiones).
-
 Usa worklog.md dentro de cada grupo para registrar cambios relevantes.
-
 Sigue las convenciones definidas en profile/conventions.md.
-
 Haz commits claros con mensajes descriptivos.
 
-📝 Nota
+## 📝 Nota
 Este repositorio es la base de conocimiento para el ecosistema. Sin él, los agentes trabajarían a ciegas. Mantenerlo actualizado es una prioridad.
 
 👤 Mantenido por — Roberto Rios - Respuestas Inteligentes
