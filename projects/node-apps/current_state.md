@@ -12,9 +12,7 @@
 
 ## Backups Detectados
 - **stock:** Backups en /backups/.
-- **ventas:** Backups con timestamp (ackup_20260731_111632).
 
 ## Problemas Conocidos
 - Falta de contenerización.
 - Sin CI/CD.
-- Algunos proyectos inactivos (jfxsignals, gorillamansion?).
