@@ -31,14 +31,6 @@
 | Llamada a IA (Claude/OpenAI) | 2-5s |
 | Total | 2.5-5.5s |
 
-## Backups Realizados
-| Fecha | Archivo | Tamaño |
-|-------|---------|--------|
-| 2026-08-01 | ackups/phase1_p0_20260801_080756/ | - |
-| 2026-08-01 | ackups/20260801_091401_p1_p2_full/ | - |
-| 2026-07-30 | ackups/frontend_20260730_183950/ | - |
-| 2026-04-20 | ackup_20260420_192501.sql | 8.9M |
-
 ## Problemas Conocidos
 - Dependencia de APIs externas (latencia, coste).
 - Caché semántico con umbral fijo (puede fallar en consultas nuevas).
