@@ -19,66 +19,67 @@
 | | firebase-admin | - |
 
 ## Pipeline V4 (8 Fases)
+
+```
 Input (Ecografía 3D/4D)
-│
-▼
+        │
+        ▼
 ┌─────────────────┐
-│ FASE 0 │ 5.4s avg
-│ Detection │ ← Gemini 3.5 Flash (primario)
-│ Dual AI │ ← MediaPipe (fallback si conf < 0.60)
+│ FASE 0          │ 5.4s avg
+│ Detection       │ ← Gemini 3.5 Flash (primario)
+│ Dual AI         │ ← MediaPipe (fallback si conf < 0.60)
 └────────┬────────┘
-│ viable?
-NO │ YES
-▼ │ ▼
-REJECT │ ┌─────────────────┐
-│ │ FASE 1 │ 91ms
-│ │ Crop │ ← Adaptive padding (face/skull)
-│ └────────┬────────┘
-│ ▼
-│ ┌─────────────────┐
-│ │ FASE 2 │ 259ms
-│ │ CLAHE │ ← Contrast Limited AHE
-│ └────────┬────────┘
-│ ▼
-│ ┌─────────────────┐
-│ │ FASE 3 │ ~0ms
-│ │ Re-detection │ ← Solo si Gemini falló inicialmente
-│ └────────┬────────┘
-│ ▼
-│ ┌─────────────────┐
-│ │ FASE 4 │
-│ │ Pose Estimation │ ← Yaw, tilt, facing_direction
-│ └────────┬────────┘
-│ ▼
-│ ┌─────────────────┐
-│ │ FASE 5 │
-│ │ Skull Mask │ ← Gaussian feathering
-│ └────────┬────────┘
-│ ▼
-│ ┌─────────────────┐
-│ │ FASE 6 │
-│ │ Composite │ ← Ultrasound + mask on black
-│ └────────┬────────┘
-│ ▼
-│ ┌─────────────────┐
-│ │ PHASE 1 │ ~120-180s
-│ │ RENDER │ ← GPT Image 2.0 (Replicate)
-│ └────────┬────────┘
-│ ▼ (opcional)
-│ ┌─────────────────┐
-│ │ FASE 8 │
-│ │ Enhance │ ← Segunda pasada (reparación anatómica)
-│ └────────┬────────┘
-│ ▼
-│ ┌─────────────────┐
-│ │ POSTPROCESS │
-│ │ Photo Finish │ ← Film grain, chrom.aberr., vignette
-│ └────────┬────────┘
-▼ ▼
-Final Portrait (PNG, base64)
+         │ viable?
+    NO   │   YES
+    ▼    │    ▼
+ REJECT  │  ┌─────────────────┐
+         │  │ FASE 1          │ 91ms
+         │  │ Crop            │ ← Adaptive padding (face/skull)
+         │  └────────┬────────┘
+         │           ▼
+         │  ┌─────────────────┐
+         │  │ FASE 2          │ 259ms
+         │  │ CLAHE           │ ← Contrast Limited AHE
+         │  └────────┬────────┘
+         │           ▼
+         │  ┌─────────────────┐
+         │  │ FASE 3          │ ~0ms
+         │  │ Re-detection    │ ← Solo si Gemini falló inicialmente
+         │  └────────┬────────┘
+         │           ▼
+         │  ┌─────────────────┐
+         │  │ FASE 4          │
+         │  │ Pose Estimation │ ← Yaw, tilt, facing_direction
+         │  └────────┬────────┘
+         │           ▼
+         │  ┌─────────────────┐
+         │  │ FASE 5          │
+         │  │ Skull Mask      │ ← Gaussian feathering
+         │  └────────┬────────┘
+         │           ▼
+         │  ┌─────────────────┐
+         │  │ FASE 6          │
+         │  │ Composite       │ ← Ultrasound + mask on black
+         │  └────────┬────────┘
+         │           ▼
+         │  ┌─────────────────┐
+         │  │ PHASE 1         │ ~120-180s
+         │  │ RENDER          │ ← GPT Image 2.0 (Replicate)
+         │  └────────┬────────┘
+         │           ▼ (opcional)
+         │  ┌─────────────────┐
+         │  │ FASE 8          │
+         │  │ Enhance         │ ← Segunda pasada (reparación anatómica)
+         │  └────────┬────────┘
+         │           ▼
+         │  ┌─────────────────┐
+         │  │ POSTPROCESS     │
+         │  │ Photo Finish    │ ← Film grain, chrom.aberr., vignette
+         │  └────────┬────────┘
+         ▼           ▼
+    Final Portrait (PNG, base64)
 
-text
-
+```
 ## Autenticación JWT RS256
 - **Firma:** RS256 con clave privada local.
 - **Verificación:** Firebase Service Account (fail-closed).
