@@ -7,63 +7,67 @@ Este documento establece las reglas de estilo, estructura y organización que ri
 ## 1. Estructura de Directorios
 
 ### 1.1 Proyecto Estándar (Python + React)
+
+```
 /proyecto/
-├── backend/ # Código Python (Flask/FastAPI)
-│ ├── app.py # Punto de entrada principal
-│ ├── config.py # Configuración (clases o pydantic-settings)
-│ ├── requirements.txt # Dependencias Python
-│ ├── .env # Variables de entorno (NUNCA versionado)
-│ ├── .env.example # Plantilla de variables (versionado)
-│ ├── blueprints/ # Módulos Flask (blueprints)
-│ │ ├── auth.py
-│ │ ├── chat.py
-│ │ └── ...
-│ ├── models/ # Modelos de datos (SQLAlchemy, etc.)
-│ ├── migrations/ # Migraciones de base de datos
-│ ├── utils/ # Utilidades compartidas
-│ ├── tests/ # Pruebas unitarias
-│ └── venv/ # Entorno virtual (ignorado)
-├── frontend/ # Código JavaScript/TypeScript (React)
-│ ├── src/
-│ │ ├── components/ # Componentes reutilizables
-│ │ ├── pages/ # Vistas/páginas
-│ │ ├── hooks/ # Hooks personalizados
-│ │ ├── context/ # Context Providers
-│ │ ├── lib/ # Utilidades y configuraciones
-│ │ ├── assets/ # Imágenes, estilos, etc.
-│ │ └── i18n/ # Internacionalización (si aplica)
-│ ├── public/ # Archivos estáticos
-│ ├── package.json # Dependencias Node.js
-│ ├── vite.config.js # Configuración de Vite
-│ └── node_modules/ # Dependencias (ignorado)
-├── backups/ # Backups manuales o automatizados
-├── docker-compose.yml # Orquestación (si aplica)
-├── README.md # Documentación general
-├── worklog.md # Historial de cambios diario
-└── .gitignore # Archivos ignorados por Git
+├── backend/                          # Código Python (Flask/FastAPI)
+│   ├── app.py                        # Punto de entrada principal
+│   ├── config.py                     # Configuración (clases o pydantic-settings)
+│   ├── requirements.txt              # Dependencias Python
+│   ├── .env                          # Variables de entorno (NUNCA versionado)
+│   ├── .env.example                  # Plantilla de variables (versionado)
+│   ├── blueprints/                   # Módulos Flask (blueprints)
+│   │   ├── auth.py
+│   │   ├── chat.py
+│   │   └── ...
+│   ├── models/                       # Modelos de datos (SQLAlchemy, etc.)
+│   ├── migrations/                   # Migraciones de base de datos
+│   ├── utils/                        # Utilidades compartidas
+│   ├── tests/                        # Pruebas unitarias
+│   └── venv/                         # Entorno virtual (ignorado)
+├── frontend/                         # Código JavaScript/TypeScript (React)
+│   ├── src/
+│   │   ├── components/               # Componentes reutilizables
+│   │   ├── pages/                    # Vistas/páginas
+│   │   ├── hooks/                    # Hooks personalizados
+│   │   ├── context/                  # Context Providers
+│   │   ├── lib/                      # Utilidades y configuraciones
+│   │   ├── assets/                   # Imágenes, estilos, etc.
+│   │   └── i18n/                     # Internacionalización (si aplica)
+│   ├── public/                       # Archivos estáticos
+│   ├── package.json                  # Dependencias Node.js
+│   ├── vite.config.js                # Configuración de Vite
+│   └── node_modules/                 # Dependencias (ignorado)
+├── backups/                          # Backups manuales o automatizados
+├── docker-compose.yml                # Orquestación (si aplica)
+├── README.md                         # Documentación general
+├── worklog.md                        # Historial de cambios diario
+└── .gitignore                        # Archivos ignorados por Git
+```
 
 ### 1.2 Proyecto Multi-Tenant (Nexus)
-/opt/nexus/
-├── docker-compose.yml # Servicios compartidos (Traefik, DB, Redis)
-├── .env # Variables globales
-├── config/ # Configuración de Traefik
-├── logs/ # Logs centralizados
-├── scripts/ # Scripts de backup y mantenimiento
-├── backups/ # Backups diarios (timestamp)
-├── tenants/ # Cada tenant es una carpeta
-│ └── {tenant}/
-│ ├── backend/
-│ │ ├── Dockerfile
-│ │ ├── requirements.txt
-│ │ └── app.py
-│ ├── frontend/
-│ │ ├── Dockerfile (multi-stage)
-│ │ ├── package.json
-│ │ └── src/
-│ └── docker-compose.yml (opcional)
-└── worklog.md
 
----
+```
+/opt/nexus/
+├── docker-compose.yml                # Servicios compartidos (Traefik, DB, Redis)
+├── .env                              # Variables globales
+├── config/                           # Configuración de Traefik
+├── logs/                             # Logs centralizados
+├── scripts/                          # Scripts de backup y mantenimiento
+├── backups/                          # Backups diarios (timestamp)
+├── tenants/                          # Cada tenant es una carpeta
+│   └── {tenant}/
+│       ├── backend/
+│       │   ├── Dockerfile
+│       │   ├── requirements.txt
+│       │   └── app.py
+│       ├── frontend/
+│       │   ├── Dockerfile (multi-stage)
+│       │   ├── package.json
+│       │   └── src/
+│       └── docker-compose.yml (opcional)
+└── worklog.md
+```
 
 ## 2. Nomenclatura
 
