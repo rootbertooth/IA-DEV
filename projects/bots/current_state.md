@@ -27,17 +27,17 @@
 ## Backups y Versionado
 
 ### respuestasinteligentes (VPS3)
-- **Backups:** 15 sesiones de briefing en ackups/sesiones/
-- **Prompts por empresa:** Versionados en ackend/prompts/
-- **SQL dumps:** En ackups/sql/dumps/
-- **Migraciones:** En ackups/sql/migraciones/
-- **Archivos de configuración:** ackups/config/ con versiones anteriores de .env y config.py
+- **Backups:** 15 sesiones de briefing en Backups/sesiones/
+- **Prompts por empresa:** Versionados en Backend/prompts/
+- **SQL dumps:** En Backups/sql/dumps/
+- **Migraciones:** En Backups/sql/migraciones/
+- **Archivos de configuración:** Backups/config/ con versiones anteriores de .env y config.py
 
 ### signalsbot (VPS1)
 - **Archivos de datos:** chat_ids.json, chat_langs.json, used_coins.json
 
 ### tenant-bot (VPS3)
-- **Backup completo:** 	enant-bot_code_20260602.tar.gz
+- **Backup completo:** 	tenant-bot_code_20260602.tar.gz
 - **Dump de DB:** signals_db_dev_20260602.sql
 
 ---
