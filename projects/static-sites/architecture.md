@@ -7,12 +7,14 @@
 | **Servidor Web** | Nginx | - |
 
 ## Estructura de Directorios
+
+```text
 /var/www/html/{dominio}/
 ├── index.html
 ├── assets/
-│ ├── css/
-│ ├── js/
-│ └── images/
+│   ├── css/
+│   ├── js/
+│   └── images/
 └── ...
 
 ## Seguridad
