@@ -64,16 +64,17 @@ VPS1 (89.167.100.214)	11	6	17	Laboratorio / Entorno Legacy
 VPS2 (204.168.228.41)	8	0	8	Productos de Negocio
 VPS3 (37.27.201.215)	8	0	8	Producción / Industrialización
 
-##📌 Todos los detalles en project/index.md
+## 📌 Todos los detalles en project/index.md
 
-##🛠️ Tecnologías principales
+## 🛠️ Tecnologías principales
 
-Área	Tecnologías
-Backend	Python (Flask, FastAPI), Node.js, PHP (WordPress)
-Frontend	React, Vite, TypeScript, Tailwind
-IA/ML	OpenAI, Anthropic Claude, Google Gemini, Ollama, MediaPipe, Replicate
-Bases de datos	PostgreSQL, MySQL, Redis, Supabase
-Infraestructura	Docker, Docker Compose, Traefik, Nginx, Gunicorn, Uvicorn, PM2, systemd
+| Área | Tecnologías |
+|------|-------------|
+| **Backend** | Python (Flask, FastAPI), Node.js, PHP (WordPress) |
+| **Frontend** | React, Vite, TypeScript, Tailwind |
+| **IA/ML** | OpenAI, Anthropic Claude, Google Gemini, Ollama, MediaPipe, Replicate |
+| **Bases de datos** | PostgreSQL, MySQL, Redis, Supabase |
+| **Infraestructura** | Docker, Docker Compose, Traefik, Nginx, Gunicorn, Uvicorn, PM2, systemd |
 
 ## 📬 Cómo contribuir
 
