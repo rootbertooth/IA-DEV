@@ -13,17 +13,6 @@
 
 ---
 
-## Versiones Migradas (VPS3 - /opt/BOTS/)
-
-| Bot | Puerto | PID | Estado | Última modificación |
-|-----|--------|-----|--------|---------------------|
-| **responsebot** | 5005 | ❌ | ⏸️ Inactivo | 21 Aug 2026 |
-| **respuestasinteligentes** | 5006 | ❌ | ⏸️ Inactivo | 21 Aug 2026 |
-| **signalsbot** | - | ❌ | ⏸️ Inactivo | 21 Aug 2026 |
-| **tenant-bot** | 5002 | ❌ | ⏸️ Inactivo | 21 Aug 2026 |
-
----
-
 ## Credenciales Detectadas (solo nombres de variables, NO valores)
 
 | Bot | Variables Sensibles |
