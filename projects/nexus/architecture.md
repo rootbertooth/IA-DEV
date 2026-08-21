@@ -11,29 +11,30 @@
 | **Frontend** | React + Node.js | 18 |
 
 ## Estructura de Directorios
-/opt/nexus/
-├── docker-compose.yml # Servicios compartidos (Traefik, PostgreSQL, Redis)
-├── .env # Variables globales (DB, Redis, puertos)
-├── config/ # Configuración de Traefik (traefik.yml, dynamic.yml)
-├── logs/ # Logs centralizados
-├── scripts/ # Scripts de backup y mantenimiento
-├── backups/ # Backups diarios (timestamp)
-│ └── {YYYYMMDD_020001}/ # Backup de cada día
-└── tenants/ # Cada tenant es una carpeta
-└── farmacia1/ # Ejemplo: farmacia1
-├── backend/
-│ ├── Dockerfile
-│ ├── requirements.txt
-│ ├── app.py
-│ ├── auth.py
-│ └── i18n.py
-├── frontend/
-│ ├── Dockerfile (multi-stage)
-│ ├── package.json
-│ └── src/
-└── docker-compose.yml (opcional, si tenant tiene servicios propios)
 
-text
+```
+/opt/nexus/
+├── docker-compose.yml                # Servicios compartidos (Traefik, PostgreSQL, Redis)
+├── .env                              # Variables globales (DB, Redis, puertos)
+├── config/                           # Configuración de Traefik (traefik.yml, dynamic.yml)
+├── logs/                             # Logs centralizados
+├── scripts/                          # Scripts de backup y mantenimiento
+├── backups/                          # Backups diarios (timestamp)
+│   └── {YYYYMMDD_020001}/            # Backup de cada día
+└── tenants/                          # Cada tenant es una carpeta
+    └── farmacia1/                    # Ejemplo: farmacia1
+        ├── backend/
+        │   ├── Dockerfile
+        │   ├── requirements.txt
+        │   ├── app.py
+        │   ├── auth.py
+        │   └── i18n.py
+        ├── frontend/
+        │   ├── Dockerfile (multi-stage)
+        │   ├── package.json
+        │   └── src/
+        └── docker-compose.yml (opcional, si tenant tiene servicios propios)
+```
 
 ## Servicios Compartidos (docker-compose.yml)
 | Servicio | Imagen | Puerto | Propósito |
