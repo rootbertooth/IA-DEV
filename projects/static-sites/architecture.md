@@ -15,8 +15,6 @@
 │ └── images/
 └── ...
 
-text
-
 ## Seguridad
 - Sin autenticación (páginas públicas).
 - Archivos estáticos servidos directamente por Nginx.
