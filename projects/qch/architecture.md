@@ -12,40 +12,42 @@
 | **Cache** | MySQL (BLOB) + similitud coseno | - |
 
 ## Estructura de Directorios
+
+```
 /var/www/cocina-con-ia/
 ├── backend/
-│ ├── app.py # Punto de entrada Flask
-│ ├── config.py # Configuración
-│ ├── database.py # Conexión MySQL
-│ ├── blueprints/ # Módulos Flask
-│ │ ├── auth.py # Autenticación JWT
-│ │ ├── chat.py # Conversaciones con IA
-│ │ ├── menu.py # Generación de menús
-│ │ ├── recetas.py # Lógica de recetas + RAG
-│ │ └── ...
-│ ├── prompts/ # Archivos de prompt externalizados
-│ │ ├── base.txt
-│ │ ├── modo_apetece.txt
-│ │ ├── modo_coccion.txt
-│ │ ├── modo_clasica.txt
-│ │ ├── modo_ingredientes.txt
-│ │ ├── modo_menu.txt
-│ │ ├── modo_mundo.txt
-│ │ ├── modo_rapido.txt
-│ │ ├── modo_tiempo.txt
-│ │ └── modo_vision.txt
-│ └── requirements.txt
+│   ├── app.py                        # Punto de entrada Flask
+│   ├── config.py                     # Configuración
+│   ├── database.py                   # Conexión MySQL
+│   ├── blueprints/                   # Módulos Flask
+│   │   ├── auth.py                   # Autenticación JWT
+│   │   ├── chat.py                   # Conversaciones con IA
+│   │   ├── menu.py                   # Generación de menús
+│   │   ├── recetas.py                # Lógica de recetas + RAG
+│   │   └── ...
+│   ├── prompts/                      # Archivos de prompt externalizados
+│   │   ├── base.txt
+│   │   ├── modo_apetece.txt
+│   │   ├── modo_coccion.txt
+│   │   ├── modo_clasica.txt
+│   │   ├── modo_ingredientes.txt
+│   │   ├── modo_menu.txt
+│   │   ├── modo_mundo.txt
+│   │   ├── modo_rapido.txt
+│   │   ├── modo_tiempo.txt
+│   │   └── modo_vision.txt
+│   └── requirements.txt
 ├── frontend/
-│ ├── src/
-│ ├── package.json
-│ └── vite.config.js
-└── backups/ # Backups de código y config
-
-text
+│   ├── src/
+│   ├── package.json
+│   └── vite.config.js
+└── backups/                          # Backups de código y config
+```
 
 ## Lógica de IA (RAG + Caché Semántico)
 1. **Embeddings:** 	ext-embedding-3-small de OpenAI.
-2. **Almacenamiento:** BLOB en MySQL (tabla ecetas_cache).
+2. **Almacenamiento:** BLOB en MySQL (tabla 
+ecetas_cache).
 3. **Búsqueda:** Similitud coseno con umbral 0.85.
 4. **Caché:** Si la consulta es similar a una ya procesada, se reutiliza la respuesta.
 
@@ -59,7 +61,8 @@ text
 
 ## Autenticación
 - **JWT** con PyJWT.
-- **Middleware:** equire_auth, check_acceso_soft, consumir_credito.
+- **Middleware:** 
+equire_auth, check_acceso_soft, consumir_credito.
 
 ## Seguridad
 - .env para claves API (OpenAI, Anthropic, DB).
