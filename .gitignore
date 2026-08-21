@@ -1,0 +1,30 @@
+﻿@"
+# Entornos virtuales
+venv/
+env/
+.env
+*.pyc
+__pycache__/
+
+# Node
+node_modules/
+dist/
+build/
+
+# Logs
+*.log
+logs/
+
+# Backups locales
+backups/
+*.bak
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# Sistema
+Thumbs.db
+.DS_Store
+"@ | Set-Content -Path "C:\Users\RooT\Desktop\VPS_ROBERT\IA DEV\.gitignore" -Encoding UTF8
