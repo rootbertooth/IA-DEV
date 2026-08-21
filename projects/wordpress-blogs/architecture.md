@@ -9,6 +9,8 @@
 | **Base de Datos** | MySQL | - |
 
 ## Estructura de Directorios
+
+```
 /var/www/blog.{dominio}/
 ├── public_html/ # Raíz de WordPress
 │ ├── wp-admin/
@@ -18,8 +20,7 @@
 │ └── wp-config.php
 ├── logs/ # Logs de acceso/error
 └── .wp-cli/ # Configuración de WP-CLI
-
-text
+```
 
 ## Usuarios Dedicados
 | Blog | Usuario | Grupo |
