@@ -86,5 +86,5 @@ Haz commits claros con mensajes descriptivos.
 ## 📝 Nota
 Este repositorio es la base de conocimiento para el ecosistema. Sin él, los agentes trabajarían a ciegas. Mantenerlo actualizado es una prioridad.
 
-## 👤 Mantenido por — Roberto Rios - Respuestas Inteligentes
-## 📅 Última actualización — Agosto 2026
+👤 Mantenido por — Roberto Rios - Respuestas Inteligentes
+📅 Última actualización — Agosto 2026
