@@ -24,7 +24,7 @@ Asistente culinario con inteligencia artificial que ayuda a los usuarios a decid
 
 ## Relaciones con Otros Proyectos
 - **/opt/ai (VPS3):** No relacionado directamente (QCH usa APIs cloud, no modelos locales).
-- **ots (VPS3):** No relacionado.
+- **Bots (VPS3):** No relacionado.
 
 ## Estado Actual
 - **Desarrollo:** 8 modos de prompt implementados con RAG y caché semántico.
