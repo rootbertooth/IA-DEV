@@ -10,6 +10,7 @@
 | **IA (algunos)** | OpenAI / Anthropic | - |
 
 ## Estructura de Directorios (Común)
+```
 /proyecto/
 ├── backend/
 │ ├── app.py
@@ -22,9 +23,7 @@
 │ ├── package.json
 │ └── vite.config.js
 └── backups/
-
-text
-
+```
 ## Despliegue
 - **Gunicorn** con workers configurables.
 - **PM2** (en algunos casos) para gestión de procesos.
