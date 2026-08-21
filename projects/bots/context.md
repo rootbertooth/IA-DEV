@@ -14,10 +14,9 @@ Colección de bots de mensajería con inteligencia artificial para automatizar t
 | **tenant-bot** | Bot de trading con panel multi-tenant (SaaS) | Flask + React + MySQL | ✅ Activo |
 
 ## Relaciones con Otros Proyectos
-- **abywonder (VPS3):** Independiente. No comparten infraestructura ni dependencias.
-- **
-exus (VPS2):** Independiente.
-- **qch (cocina-con-ia, VPS1):** Comparten stack (Flask + React) pero no hay comunicación directa.
+- **Babywonder (VPS3):** Independiente. No comparten infraestructura ni dependencias.
+- **Nexus (VPS2):** Independiente.
+- **Que Cocino Hoy - qch (cocina-con-ia, VPS1):** Comparten stack (Flask + React) pero no hay comunicación directa.
 
 ## Estado General
 - **Versiones VPS1:** ✅ 4 bots activos en producción.
