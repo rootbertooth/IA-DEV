@@ -146,7 +146,6 @@ Este documento describe el conjunto de tecnologías, frameworks, herramientas y 
 | Tecnología | Uso | Proyectos |
 |------------|-----|-----------|
 | **Nginx** | Servidor web, TLS termination, proxy inverso | VPS1, VPS2, VPS3 |
-| **Apache** | (No detectado en la auditoría) | - |
 
 ---
 
